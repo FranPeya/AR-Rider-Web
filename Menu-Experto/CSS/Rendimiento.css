@@ -1,0 +1,322 @@
+*{
+   margin: 0;
+   padding: 0;
+ 
+}
+
+body {
+    background: #fff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+    font-family: texta alt, muli,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*----------------HEADER----------------*/
+header{
+    display: flex;
+    padding: 1em 1em;
+    width: auto;
+    background-color: #fa0050;
+    color: #ffffff;
+    box-shadow:0 0 10px 2px black;
+    height: fit-content;
+
+
+}
+.Logo{
+    padding-left: 50px;
+    margin-top:auto;
+    margin-bottom: auto;
+
+}
+.Logo img{
+    width: 150px;
+    height: auto;
+    
+    
+    
+}
+
+
+header h1{
+    
+    width: 100%;
+    font-weight: 800;
+    font-family: texta alt, muli,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 60px;
+    padding: 10px;
+}
+/*----------------CONTENIDO----------------*/
+.Contenido{
+    display: block;
+    background-color: #fff;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    color:#100423;
+}
+.Contenido .texto{
+    padding: 30px 20%;
+    
+    
+}
+.Contenido .texto h1{
+    font-family: texta alt, muli,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 45px;
+    color:#fa0050;
+    
+}
+
+.Contenido .texto p{
+    font-family: lato,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 14px;
+    font-size: 16px;
+    width: 70%;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+.Live{
+    padding: 0px 10%;
+}
+.stacking{
+    display: flex;
+    padding-top: 40px;
+    padding: 0px 20%;
+}
+.Live .Gif img{
+    padding-top:40px;
+    width: 500px;
+    height: auto;
+    padding-bottom: 0px;
+}
+.stacking .Gif img{
+    padding-top:40px;
+    width: 500px;
+    height: auto;
+    padding-bottom: 50px;
+}
+.stacking p{
+    font-family:texta alt, muli;
+    padding:20px;
+    text-align: left;
+ }
+.Importante{
+    color:#fff;
+    background-color: #fa0050;
+    padding: 20px;
+    margin-top: 40px;
+    line-height: 22px;
+    width: 70%;
+    margin-right:auto;
+    margin-left:auto;
+    font-size: 20px;
+    
+}
+    
+
+.imagen-1{
+   
+    height: auto;
+}
+.imagen-1 img{
+    width: 800px;
+    height: auto;
+    padding:40px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+/*----------------FOOTER----------------*/
+
+
+.Footer{
+    background: #fa0050;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 0px;
+    font-family:texta alt, muli, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    height:fit-content;
+    
+}
+
+
+.Footer .container-fot{
+    display: block;
+    
+}
+
+
+
+
+
+.Footer .container-fot .logo-fot{
+    display: flex;
+    padding: 20px 55px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+}
+
+.Footer .container-fot .Social-media{
+
+   padding: 0px 60px;
+   line-height: 30px;
+   
+}
+
+.Footer .container-fot .Social-media a{ 
+    display: ;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.Social-media a img{
+    width: 50px;
+}
+.Footer .container-fot .legal{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-family: texta alt, muli,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:800px ) {
+    header h1{
+    
+        width: 100%;
+        font-weight: 800;
+        font-family: texta alt, muli,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+    }
+  
+    header{
+        display: flex;
+        padding: 1em 1em;
+        width: auto;
+        background-color: #fa0050;
+        color: #ffffff;
+        box-shadow:0 0 10px 2px black;
+        height: fit-content;
+    
+    }
+    .Logo {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 0px;
+    } 
+    .Logo img{
+        width: 100px;
+        height: auto;
+    } 
+
+    .Contenido{
+        display: block;
+        padding-bottom:20px;
+        margin: 0%;
+        text-align: center;
+
+    }
+    .Contenido .texto h1{
+        font-size:26px;
+        padding: 10px;
+
+    }
+    .Contenido .texto p{
+        width: 80%;
+    }
+    .Contenido .texto{
+        padding:0px 0px;
+    }
+    .Importante{
+        margin-top: 10px;
+        
+    }
+    .stacking{
+        display: block;
+        padding: 0px 0%;
+    }
+
+    .stacking .Gif img{
+        padding:10px 0px;
+        width: 100%;
+   
+    }
+    .t2 h1{
+        padding:20px
+    }
+
+    .imagen-1 img{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+    .Footer{
+        padding:7px 0px;
+    }
+    .logo-fot{
+        padding: 10px 54px;
+    }
+    .Footer .container-fot .Social-media{
+        padding:0px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Footer .container-fot .Social-media a {
+       font-size: 16px;
+       font-weight: 700;
+    }
+     .Social-media a img{
+     width: 20px;
+    }
+ 
+    .logo-fot-Peya{
+        margin: auto;
+        width: 100px;
+        padding-bottom: 15px;
+    }
+    
+
+   
+
+
+
+
+}
