@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+ 
+body {
+    color: #100423;
+    background: #fff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    padding: 1em 1em;
+    width: auto;
+    background-color: #fa0050;
+    color: #ffffff;
+  
+    height: fit-content;
+
+
+}
+.Logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 50px;
+
+}
+.Logo img{
+    width: 150px;
+    height: auto;
+    
+    
+}
+
+
+header h1{
+    
+    width: 100%;
+    font-weight: 800;
+    font-family: texta alt, muli,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 60px;
+}
+
+main{
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+ .cont-rows{
+     cursor: pointer;
+     margin-top: 17px;
+     margin-bottom: 17px;
+     padding: 10px 20px;
+     border-radius: 35px;
+     border-style: solid;
+     border-color: #fa0050;
+     width: 80%;
+     background-color: #F6F8F8;
+     text-align: left;
+     margin-left: auto;
+     margin-right: auto;
+     font-family: texta alt,lato,texta alt, muli,sans-serif;  
+     font-size: 10px;
+    
+ }
+ .cont-rows a{
+    text-decoration: none;
+    color: #100423; 
+ }
+
+ .cont-rows:hover,.cont-rows a:hover{
+     background-color: #fa0050;
+     color: #F6F8F8;
+     transition-duration: 0.5s;
+ }
+#slot:hover{
+    background-color: #fa0050;
+    color:#fff;
+    transition-duration: 0.5s;
+}
+.row{
+    text-align: left;
+}
+
+ #slot{
+     text-align: left;
+ }
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+     
+ 
+     
+ 
+ 
+ 
+ 
+.Footer{
+    background: #100423;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 0px;
+    font-family:texta alt, muli, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    height:fit-content;
+    position: static; 
+    bottom: 0; 
+    width: 100%;
+    
+}
+
+
+.Footer .container-fot{
+    display: block;
+    
+}
+
+
+
+
+
+.Footer .container-fot .logo-fot{
+    display: flex;
+    padding: 20px 55px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+}
+
+.Footer .container-fot .Social-media{
+
+   padding: 0px 60px;
+   line-height: 30px;
+   
+}
+
+.Footer .container-fot .Social-media a{ 
+    display: ;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.Social-media a img{
+    width: 50px;
+}
+.Footer .container-fot .legal{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-family: texta alt, muli,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+}
+
+
+ 
+ 
+ 
+ @media only screen and (max-width:800px ) {
+     
+   
+    header h1{
+    
+        width: 100%;
+        font-weight: 800;
+        font-family: texta alt, muli,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+    }
+  
+    header{
+        display: flex;
+        padding: 1em 1em;
+        width: auto;
+        background-color: #fa0050;
+        color: #ffffff;
+        height: fit-content;
+    
+    }
+    .Logo {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 0px;
+    } 
+    .Logo img{
+        width: 100px;
+        height: auto;
+    } 
+    
+
+     .cont-rows{
+         font-size: 10px;
+     }
+     
+ 
+     
+    .Footer{
+        padding:7px 0px;
+    }
+    .logo-fot{
+        padding: 10px 54px;
+    }
+    .Footer .container-fot .Social-media{
+        padding:0px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Footer .container-fot .Social-media a {
+       font-size: 16px;
+       font-weight: 700;
+    }
+     .Social-media a img{
+     width: 20px;
+    }
+ 
+    .logo-fot-Peya{
+        margin: auto;
+        width: 100px;
+        padding-bottom: 15px;
+    }
+
+ 
+ 
+ }
+  
+ @media only screen and (max-width:300px ) {
+    header h1{
+        font-size: 20PX;
+    }
+
+    .text h1{
+        font-size: 18px;
+    }
+
+ }
+ 
