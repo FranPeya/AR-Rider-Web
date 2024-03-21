@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const contenidoNavbar = `<div class="container">
-  <a class="navbar-brand " href="../index.html">
+  <a class="navbar-brand " href="../AR-Rider-Web/index.html">
     <img src="https://i.postimg.cc/L5dxHpYL/logo-riders.png" alt="Logo Desktop" class="d-none d-lg-inline logo-desktop img-fluid" style="max-width: 130px;">
     <img src="https://i.postimg.cc/fRchtmGS/logo-rider-reducido.png" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="max-width: 100px;">
   </a>
