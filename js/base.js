@@ -51,21 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item py-2">
         
-        <a class="nav-link text-white nav-cat" href="../centro.html">
+        <a class="nav-link text-white nav-cat" href="../AR-Rider-Web/centro.html">
         <img src="/img/Help.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px">  Centro de autogestión</a>
         </li>
         <li class="nav-item py-2">
-          <a class="nav-link text-white nav-cat" href="../seguridad.html">
+          <a class="nav-link text-white nav-cat" href="../AR-Rider-Web/seguridad.html">
           <img src="/img/Security.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
           Seguridad</a>
         </li>
         <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="../descuentos.html">
+        <a class="nav-link text-white nav-cat" href="../AR-Rider-Web/descuentos.html">
         <img src="/img/Discount.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
         Descuentos</a>
       </li>
       <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="../aplicantes.html">
+        <a class="nav-link text-white nav-cat" href="../AR-Rider-Web/aplicantes.html">
         <img src="/img/Information.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
         ¿Qué necesito para aplicar?</a>
       </li>
