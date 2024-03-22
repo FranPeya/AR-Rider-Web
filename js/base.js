@@ -9,7 +9,7 @@ let isScrollingUp = false;
 // Crea el script para gtag.js
 var script1 = document.createElement('script');
 script1.async = true;
-script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-B909TK6D2V';
+script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-7N2R6SSJ07';
 
 // Crea el script para tu configuración de Google Analytics
 var script2 = document.createElement('script');
@@ -17,7 +17,7 @@ var inlineScript = document.createTextNode(`
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-B909TK6D2V');
+  gtag('config', 'G-7N2R6SSJ07');
 `);
 
 script2.appendChild(inlineScript);
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     prevScrollPos = currentScrollPos;
   
-    if (window.scrollY === 0) {
+    if (window.scrollY ===0) {
       navbar.classList.remove('fixed');
     }
   };
