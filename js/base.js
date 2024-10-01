@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const contenidoNavbar = `<div class="container">
-  <a class="navbar-brand " href="../AR-Rider-Web/index.html">
+  <a class="navbar-brand " href="../index.html">
     <img src="https://i.postimg.cc/L5dxHpYL/logo-riders.png" alt="Logo Desktop" class="d-none d-lg-inline logo-desktop img-fluid" style="max-width: 130px;">
     <img src="https://i.postimg.cc/fRchtmGS/logo-rider-reducido.png" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="max-width: 100px;">
   </a>
@@ -51,28 +51,24 @@ document.addEventListener("DOMContentLoaded", () => {
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item py-2">
         
-        <a class="nav-link text-white nav-cat" href="../AR-Rider-Web/centro.html">
-        <img src="/img/Help.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px">  Centro de autogestión</a>
+        <a class="nav-link text-white nav-cat" href="../centro.html">
+        <img src="/img/Help.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px">  Centro de Autogestión</a>
         </li>
+        
         <li class="nav-item py-2">
-          <a class="nav-link text-white nav-cat" href="../AR-Rider-Web/seguridad.html">
-          <img src="/img/Security.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
-          Seguridad</a>
-        </li>
-        <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="../AR-Rider-Web/descuentos.html">
+        <a class="nav-link text-white nav-cat" href="../descuentos.html">
         <img src="/img/Discount.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
         Descuentos</a>
       </li>
       <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="../AR-Rider-Web/aplicantes.html">
+        <a class="nav-link text-white nav-cat" href="../categorias/riders-nuevos.html">
         <img src="/img/Information.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
-        ¿Qué necesito para aplicar?</a>
+        Documentos para aplicar</a>
       </li>
         <li class="nav-item py-2">
-          <a class="nav-link text-white nav-cat" href="#">
+          <a class="nav-link text-white nav-cat" href="https://www.repartosya.com.ar/?utm_source=riderhub&utm_medium=own&utm_campaign=boton_home">
           <img src="../img/Moto.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
-          Regístrate aquí</a>
+          Registrate Ya</a>
         </li>
       </ul>
     </div>
