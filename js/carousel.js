@@ -1,25 +1,25 @@
+import { contDescuentos } from './base.js';
+
 let carouselAmostrar = "";
 let carouselJSON = [];
 let carFiltrada = "";
 
 const carouselDOM = document.querySelector("#carousel");
 
-const dataCar = `https://script.google.com/macros/s/AKfycbySCALq2dD0KZQ-H2XbxX2ojkEfCYEPf7RDiqRndA74HM6hYFBJpv1gd0I5NjvXyHyYSw/exec`;
-
 document.addEventListener("DOMContentLoaded", () => {
     
-  const obtengoCarousel = (dataCar) => {
-    fetch(dataCar)
+  const obtengoCarousel = (contDescuentos) => {
+    fetch(contDescuentos)
       .then((response) => response.json())
       .then((data) => {
-        carFiltrado = data.filter(p => p.banner === true && p.publicar === true);
-        carFiltrado.forEach((cont, index) => {
+        carFiltrada = data.filter(p => p.banner === true && p.publicar === true);
+        carFiltrada.forEach((cont, index) => {
           carouselAmostrar += retornoCarouselContenido(cont, index);
         });
         carouselDOM.innerHTML = carouselAmostrar;
       });
   };
-  obtengoCarousel(dataCar);
+  obtengoCarousel(contDescuentos);
 });
 
 const retornoCarouselContenido = (cont, index) => {
@@ -45,13 +45,13 @@ const retornoCarouselContenido = (cont, index) => {
           <td width="50%" bgcolor="#fa0050">
             <h3 class="titulo fs-lg-1"><b>${nombre}</b></h3>
             <h3 class="px-4 pt-lg-4 fs-lg-2">${descuento}<br></h3>
-            <p class="px-4 fs-6 fw-light lh-sm pt-lg-4">${descripcion}</p>
+            <p class="px-4 fs-6 lh-sm pt-lg-4">${descripcion}</p>
           </td>
         </tr>
         <tr style="text-align: center; height: 10%;" bgcolor="#fa0050">
           <td>
             <div>
-              <a class="btn banner-boton border border-0 rounded-pill mb-2" href="#" data-bs-toggle="modal" role="button" id="${track_id}" data-bs-target="#${track_id}Modal">Conoce más</a>
+              <a class="btn banner-boton border border-0 rounded-pill mb-2"  data-bs-toggle="modal" role="button" data-bs-target="#${track_id}Modal">Conoce más</a>
             </div>
           </td>
         </tr>

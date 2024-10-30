@@ -1,3 +1,5 @@
+import { contDescuentos } from './base.js';
+
 // Definir las variables globales
 let cardsAmostrar = "";
 let cardsCtaAmostrar = "";
@@ -9,11 +11,9 @@ let detalleJSON = [];
 const contenidoDOM = document.querySelector("#contenido");
 const cargandoDOM = document.querySelector("#cargando");
 
-// URL para obtener los datos
-const URL = `https://script.google.com/macros/s/AKfycbySCALq2dD0KZQ-H2XbxX2ojkEfCYEPf7RDiqRndA74HM6hYFBJpv1gd0I5NjvXyHyYSw/exec`;
 
 // Función para generar la tarjeta de contenido
-const retornoCardContenido = (contenido) => {
+export const retornoCardContenido = (contenido) => {
     const {
         id,
         track_id,
@@ -64,7 +64,7 @@ const retornoCardContenido = (contenido) => {
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
            
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button id="${track_id}Modal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <table  class="banner ">
             <tr style="height:10px;">
@@ -98,7 +98,7 @@ const retornoCardContenido = (contenido) => {
 };
 
 // Función para generar la tarjeta de contenido con CTA
-const retornoCardContenidoCta = (contenido) => {
+export const retornoCardContenidoCta = (contenido) => {
     const {
         id,
         track_id,
@@ -144,13 +144,13 @@ const retornoCardContenidoCta = (contenido) => {
     
     
     <!-- Modal -->
-    <div class="modal fade" id="${track_id}Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="${track_id}Modal" tabindex="4" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
            
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button id="${track_id}Modal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <table  class="banner ">
             <tr style="height:10px;">
@@ -186,7 +186,7 @@ const retornoCardContenidoCta = (contenido) => {
 // Función para generar las tarjetas
 
   document.addEventListener("DOMContentLoaded", () => {
-    fetch(URL)
+    fetch(contDescuentos)
       .then((response) => response.json())
       .then((data) => {
 

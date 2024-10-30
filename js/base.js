@@ -1,3 +1,11 @@
+export const catAutogestion = 'https://script.google.com/macros/s/AKfycbwRgJdz5Swo1uPi3XvZwS9J5GXseO8zVKNgYy14BaONmPav3wlNlTqiI56i_LVeoPR3/exec';
+export const resAutogestion = 'https://script.google.com/macros/s/AKfycbyrel6pHIeAfPQ7ByHfBaQRC1CndpxhISlwOLhC0-nYye1qAsSM3KK1jwQurF6BAxlK/exec';
+export const contDescuentos = 'https://script.google.com/macros/s/AKfycbySCALq2dD0KZQ-H2XbxX2ojkEfCYEPf7RDiqRndA74HM6hYFBJpv1gd0I5NjvXyHyYSw/exec';
+export const catDescuentos = 'https://script.google.com/macros/s/AKfycbzQvuOxyMUgqiVkOeW-v4PDjukCv8Vjp8WGnZZ9Sv9BOwB7jngGuUqOoP-JQNKVW5XIyA/exec';
+export const faqAplicantes = '';
+export const jsonNhb = '';
+
+
 const navbar = document.getElementById('navbar');
 const footer = document.getElementById('footer');
 
@@ -11,20 +19,9 @@ var script1 = document.createElement('script');
 script1.async = true;
 script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-7N2R6SSJ07';
 
-// Crea el script para tu configuración de Google Analytics
-var script2 = document.createElement('script');
-var inlineScript = document.createTextNode(`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7N2R6SSJ07');
-`);
-
-script2.appendChild(inlineScript);
-
 // Agrega los scripts al <head>
 document.head.appendChild(script1);
-document.head.appendChild(script2);
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -66,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Documentos para aplicar</a>
       </li>
         <li class="nav-item py-2">
-          <a class="nav-link text-white nav-cat" href="https://www.repartosya.com.ar/?utm_source=riderhub&utm_medium=own&utm_campaign=boton_home">
+          <a class="nav-link text-white nav-cat" href="https://www.repartosya.com.ar/?utm_source=riderhub&utm_medium=own&utm_campaign=navbar">
           <img src="../img/Moto.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
           Registrate Ya</a>
         </li>

@@ -1,3 +1,5 @@
+import { catAutogestion } from './base.js';
+
 let cardsAmostrar = "";
 let contenidoJSON = [];
 let verMas = "";
@@ -11,16 +13,14 @@ let country = document.querySelector("#paisSelection");
 let formulario = document.querySelector("#formulario");
 
 
-const URL =`https://script.google.com/macros/s/AKfycbwRgJdz5Swo1uPi3XvZwS9J5GXseO8zVKNgYy14BaONmPav3wlNlTqiI56i_LVeoPR3/exec`;
-
 
 document.addEventListener("DOMContentLoaded", () => {
 
 
 
   
-    const obtengoContenido = (URL) => {
-      fetch(URL)
+    const obtengoContenido = (catAutogestion) => {
+      fetch(catAutogestion)
         .then((response) => response.json())
         .then((data) => {
 
@@ -33,12 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
           contenidoDOM.innerHTML = cardsAmostrar;
         });
     };
-    obtengoContenido(URL);
+    obtengoContenido(catAutogestion);
 
-    const card = document.querySelector(".card-body")
-    card.addEventListener('click', () => {
-      contenidoDOM.innerHTML = "";
-  });
 
     
   

@@ -1,6 +1,6 @@
-let suggestions = [];
+import { resAutogestion } from "./base.js";
 
-const listaURL = `https://script.google.com/macros/s/AKfycbyrel6pHIeAfPQ7ByHfBaQRC1CndpxhISlwOLhC0-nYye1qAsSM3KK1jwQurF6BAxlK/exec`;
+let suggestions = [];
 
 // Getting all required elements
 const searchInput = document.querySelector(".searchInput");
@@ -22,19 +22,18 @@ function hideLoadingIcon() {
 
 // Function to display "Lo siento, prueba con otra palabra" message
 function displayNoResultsMessage() {
-  
-  resultBox.innerHTML = "<p style='padding-left:30px'>Lo siento :(   prueba con otra palabra.</p>";
+  resultBox.innerHTML =
+    "<p style='padding-left:30px'>Lo siento :(   prueba con otra palabra.</p>";
 }
 
 // Function to clear the results
 function clearResults() {
   resultBox.innerHTML = "";
-  searchInput.classList.remove("active")
+  searchInput.classList.remove("active");
 }
 
 // If the user presses the Enter key
 input.addEventListener("keyup", (e) => {
-  
   if (e.key === "Enter") {
     let userData = e.target.value.trim(); // User entered data
 
@@ -47,7 +46,7 @@ input.addEventListener("keyup", (e) => {
 
     showLoadingIcon();
 
-    fetch(listaURL)
+    fetch(resAutogestion)
       .then((response) => response.json())
       .then((data) => {
         emptyArray = data.filter((dataP) => {
@@ -58,14 +57,15 @@ input.addEventListener("keyup", (e) => {
         });
 
         if (emptyArray.length === 0) {
-          displayNoResultsMessage()
+          displayNoResultsMessage();
         } else {
           emptyArray = emptyArray.map((dataP) => {
             // Passing return data inside li tag
             return (
               '<div class="accordion-item"> <h2 class="accordion-header" id="flush-heading' +
               dataP.id +
-              '"><button id="'+ dataP.id +
+              '"><button id="' +
+              dataP.id +
               '" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse' +
               dataP.id +
               '" aria-expanded="false" aria-controls="flush-collapse' +
@@ -79,7 +79,6 @@ input.addEventListener("keyup", (e) => {
               "' data-bs-parent='#accordionFlushExample'><div class='accordion-body'> <p>" +
               dataP.respuesta +
               "</p></div></div></div></div>"
-              
             );
           });
 
@@ -113,6 +112,3 @@ function showSuggestions(list) {
   }
   resultBox.innerHTML = listData;
 }
-
-
-
