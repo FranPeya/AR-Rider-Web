@@ -1,15 +1,16 @@
+
 :root{
-    --bs-link-hover-color:#ea044e;
+    --bs-link-hover-color:#100423;
 }
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
     color:var(--red)
 }
-
-
 .nav{
     justify-content: center;
-  
 }
+
+
 .tab{
     font-size: 32px;
     font-weight: 700;
@@ -22,14 +23,47 @@
 .nav-link{
     color:var(--dark)
 }
+.pills{
+    width: 100%;
+    color: var(--dark);
+    text-decoration: none;
+}
+.offcanvas.offcanvas-bottom{
+    height: auto;
+    max-height: 100%;
+  }  
+
+.offcanvas{
+    font-size: 16px;
+}
 .card{
     max-width: 100%;
 }
+ .card:hover {
+    color: var(--dark);
+    background-color: var(--dacnis-light);
+    transition-duration: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transition: all 0.5s ease;
+  }
+
+h3{
+    color:#100423!important;
+}
+
+
 h1{
     font-weight: 700;   
 }
 .card-title{
+    max-width: 80%;
+    text-align: center;
+    padding: 10px;
     font-weight: 700;
+    background-color: var(--dacnis);
+}
+.card-title:hover{
+    color:var(--bs-link-hover-color)!important;
 }
 .img-seg{
     max-width: 200px;
@@ -42,19 +76,54 @@ main{
     padding: 3% 20% 10% 20%;
     min-height: 700px;
 }
+.offcanvas b, .offcanvas strong {
+    font-weight: bold; /* Asegúrate de usar un valor que denote negrita */
+}
+
+.iframe-contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* Establece una altura específica para móviles o usa padding-top para mantener proporción */
+    height: auto; /* Ajuste para dispositivos móviles, podría necesitar ajustes específicos */
+}
+
+.iframe-contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 767px) {
+    .card-title{
+        max-width: 100%;
+    }
+    .iframe-contenedor {
+        padding-top: 0; /* Elimina el padding si estaba siendo usado para mantener proporción */
+        height: 1200px; /* Ejemplo, ajusta según la altura deseada */
+    }
 
     main{
         padding: 20px 20px;  
     }
     .tab{
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 700;
         padding: 10px;
     }
 
 }
 @media (min-width: 768px){
+    .iframe-contenedor {
+        padding-top: 0; /* Elimina el padding si estaba siendo usado para mantener proporción */
+        height: 1000px; /* Ejemplo, ajusta según la altura deseada */
+    }
+
+
     .col-md-8 {
         width: 70%;
     }

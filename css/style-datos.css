@@ -23,6 +23,9 @@ video{
     width: 50%;
     height: auto;
 }
+img{
+    width: 80%;
+}
 @media (max-width: 767px) {
 
     .respuestas{
@@ -39,6 +42,9 @@ video{
     video{
         width: 100%;
         height: auto;
+    }
+    img{
+        width: 100%;
     }
     
 }
