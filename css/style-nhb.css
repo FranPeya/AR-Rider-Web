@@ -1,0 +1,198 @@
+
+
+/* Overlay del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Contenido del modal */
+  .modal-content {
+    background-color: #1C1331;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    color: #FFFFFF;
+    position: relative;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  /* Botón para cerrar el modal */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  /* Animación del modal */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Contenedor de la sección Bono de Inicio */
+  #inicio-bono-section {
+    background-color: #1C1331;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Contenedor de la aplicación (mensaje inicial y dropdown) */
+  #app-container {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  #inicio-bono-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  #inicio-bono-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  #inicio-bono-section p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Lista desplegable */
+  select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #00d9fc;
+    color: #100423;
+    font-family: Segma;
+  }
+  
+  /* Contenedor para las tarjetas */
+  #flyer-container {
+    background-color: #1C1331;
+    color: #100423;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Estilos comunes para cada tarjeta (sección) */
+  div .section-slide-in {
+    padding: 20px;
+    background-color: #00d9fc ;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    max-width: 500px;
+  }
+  
+  div h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #100423;
+    text-align: left;
+  }
+  
+  
+  /* Títulos y textos dentro de las tarjetas */
+  
+  
+  
+  .highlight {
+    font-weight: bold;
+  }
+  
+  .amount {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .currency {
+    font-size: 24px;
+  }
+  
+  .value {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  /* Botón "Extras" */
+  .extra {
+    background-color: #FFE438;
+    color: #100423;
+    padding: 3px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  
+  /* Texto explicativo */
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #100423;
+    text-align: left;
+  }
+  
+  .app-container h3{
+    text-align: left;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  /* Disclaimer para la fecha de validez */
+  #flyer-container .disclaimer {
+    color: #100423;
+    font-size: 12px;
+    padding: 5px;
+    text-align: left;
+  }
+
+  #flyer-container .card-title-nhb {
+    color: #100423;
+    text-align: left;
+  }
+
+  #flyer-container p {
+    color: #100423;
+    text-align: left;
+  }
+
+  #app-container h3 {
+    text-align: left;
+  }

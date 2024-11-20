@@ -51,8 +51,7 @@ h5{
 .container-sm{
   background-color: var(--dark);
   padding: 120px 0px;
-  border-radius: 0px 300px 300px 0px; 
-
+  border-radius: 0px 300px 300px 0px;
 }
 
 
@@ -109,7 +108,7 @@ h5{
 .section-bk{
   background-color:  var(--red-2);
 }
-  .section {
+  .section-convertite-en-rider {
     border-radius: 400px 0px 0px 400px; 
     margin-left: auto;
     margin-right: auto;
@@ -176,9 +175,7 @@ h5{
     max-width: 100%;
   }
   
-  .card-text{
-    padding-top: 30px;
-  }
+  
  
   .carousel-inner {
     padding-left: 0px;
@@ -192,4 +189,26 @@ h5{
   .carousel-item {
     flex: 0 0 100%; /* Cada tarjeta ocupa el 100% del ancho en dispositivos móviles */
   }
+}
+
+
+/* Animación de entrada */
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Aplicación de la animación a las tarjetas */
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+
+}.card-text{
+  padding-top: 30px;
+  color: #FFFFFF;
 }
