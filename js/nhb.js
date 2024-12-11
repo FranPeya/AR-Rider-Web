@@ -112,37 +112,47 @@ function setupDropdownListener(data) {
 function openModal() {
     const modal = document.getElementById('inicio-bono-modal');
     modal.style.display = 'flex';
-}
-
-// Función para cerrar el modal
-function closeModal() {
+    document.body.style.overflow = 'hidden'; // Disable background scrolling
+  }
+  
+  function closeModal() {
     const modal = document.getElementById('inicio-bono-modal');
     modal.style.display = 'none';
-}
-
-// Configuración de los botones del modal
-function setupModalListeners() {
+    document.body.style.overflow = ''; // Re-enable background scrolling
+  }
+  
+  function setupModalListeners() {
     const openModalBtn = document.getElementById('open-modal-btn');
     const closeModalBtn = document.getElementById('close-modal-btn');
-
-    if (openModalBtn) {
-        openModalBtn.addEventListener('click', openModal);
-    }
-
-    if (closeModalBtn) {
-        closeModalBtn.addEventListener('click', closeModal);
-    }
-
-    // Cerrar modal al hacer clic fuera del contenido
     const modalOverlay = document.getElementById('inicio-bono-modal');
-    if (modalOverlay) {
-        modalOverlay.addEventListener('click', (event) => {
-            if (event.target === modalOverlay) {
-                closeModal();
-            }
-        });
+  
+    if (openModalBtn) {
+      openModalBtn.addEventListener('click', openModal);
     }
-}
+  
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener('click', closeModal);
+    }
+  
+    // Close modal when clicking outside the content
+    if (modalOverlay) {
+      modalOverlay.addEventListener('click', (event) => {
+        if (event.target === modalOverlay) {
+          closeModal();
+        }
+      });
+    }
+  
+    // Close modal with the Esc key
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', setupModalListeners);
+  
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', () => {
